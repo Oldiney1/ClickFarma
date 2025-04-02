@@ -3,3 +3,16 @@
     margin: 0px;
     padding: 0px;
 }
+
+:root{
+
+    --primeira-cor: #403b33;
+    --segunda-cor: #94c7b6;
+    --terceira-cor: #edebe6;
+
+}
+
+body{
+    background-color: var(--terceira-cor);
+}
+
