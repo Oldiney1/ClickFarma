@@ -1,0 +1,38 @@
+section{
+    
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    h1{
+        text-align: center;
+        img{
+            width: 30px;
+        }
+    }
+
+    div{
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    }
+    
+
+
+    .produtos:hover{
+        transform: translateY(-5px);
+    }
+}
