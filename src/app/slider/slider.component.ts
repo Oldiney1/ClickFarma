@@ -10,3 +10,28 @@ import { Component } from '@angular/core';
 export class SliderComponent {
 
 }
+
+let count: number = 1;
+
+// Acessar o elemento e garantir que ele existe antes de manipular o "checked"
+const radio1 = document.getElementById("radio1") as HTMLInputElement;
+if (radio1) {
+  radio1.checked = true;
+}
+
+setInterval(function() {
+  nextImage();
+}, 5000);
+
+function nextImage(): void {
+  count++;
+  if (count > 4) {
+    count = 1;
+  }
+
+  // Acessar o próximo elemento e garantir que ele exista
+  const radioElement = document.getElementById("radio" + count) as HTMLInputElement;
+  if (radioElement) {
+    radioElement.checked = true;
+  }
+}
