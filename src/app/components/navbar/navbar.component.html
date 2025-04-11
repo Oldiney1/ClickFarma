@@ -1,0 +1,28 @@
+<nav>
+
+  <div class="logo">
+      <a routerLink="/" href=""><img src="/assets/imagens/click.png" alt=""></a>
+      <div class="letreiro">
+          <p><b>Click</b></p>
+          <p><b>Farma</b></p>
+      </div> 
+  </div>
+
+  
+  <ul class="menu1">  
+    <a href="/"><img src="assets/imagens/home.png" alt="">Home</a>
+    
+    <a routerLink="/carrinho" href=""><img src="assets/imagens/shopping-cart.png" alt="">Carrinho</a>
+    
+    <a routerLink="/login" href=""><img src="assets/imagens/user.png" alt="">Login</a>
+    
+  </ul>
+  
+  <button class="hamburguer" (click)="toggleMenu()">☰</button>
+  
+  <ul class="menu2"  [class.active]="isMenuOpen">
+      <a routerLink="/" href="">Home</a>
+      <a routerLink="/carrinho" href="">Carrinho</a>
+      <a routerLink="/login" href="">Login</a>
+  </ul>
+</nav>
